@@ -1,7 +1,7 @@
-// export const CIRCLES_CANVAS_W = window.innerWidth;
-// export const CIRCLES_CANVAS_H = window.innerHeight;
-export const CIRCLES_CANVAS_W = 768;
-export const CIRCLES_CANVAS_H = 512;
+export const CIRCLES_CANVAS_W = window.innerWidth;
+export const CIRCLES_CANVAS_H = window.innerHeight;
+// export const CIRCLES_CANVAS_W = 768;
+// export const CIRCLES_CANVAS_H = 512;
 export const CELL_SIZE = 40;
 export const DOTE_SIZE = 2;
 export const CIRCLES_COUNT = 4;

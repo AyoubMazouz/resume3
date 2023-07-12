@@ -1,5 +1,4 @@
 <script>
-  import { COLORS } from "../constants";
   import { projects } from "../data";
   import Smodel from "../stores/Smodel";
 
@@ -8,11 +7,11 @@
   }
 </script>
 
-<div class="space-y-12 flex flex-col items-center lg:py-72">
+<div class="space-y-12 flex flex-col items-center lg:py-[21rem]">
   {#each projects as project (project.name)}
     <button
       on:click={() => handleProjectClick(project.name)}
-      class="rounded-lg shadow-xl overflow-hidden border border-secondary hover:border-dark transition-all duration-200 hover:scale-105 cursor-pointer relative group"
+      class="rounded-sm shadow-lg overflow-hidden border border-dark transition-all duration-200 hover:scale-105 cursor-pointer relative group"
     >
       <div class="">
         <img src={project.thumbnail} alt={project.name} />
@@ -22,8 +21,8 @@
       >
         <h2 class="text-xl text-light text-left font-semibold mb-2">{project.name}</h2>
         <div class="flex gap-3 flex-wrap text-sm">
-          {#each project.technologies as tech, index (tech)}
-            <div class="font-semibold text-{COLORS[index % 3]}">
+          {#each project.technologies as tech (tech)}
+            <div class="font-semibold">
               {tech}
             </div>
           {/each}
