@@ -1,0 +1,15 @@
+// export const CIRCLES_CANVAS_W = window.innerWidth;
+// export const CIRCLES_CANVAS_H = window.innerHeight;
+export const CIRCLES_CANVAS_W = 768;
+export const CIRCLES_CANVAS_H = 512;
+export const CELL_SIZE = 40;
+export const DOTE_SIZE = 2;
+export const CIRCLES_COUNT = 4;
+export const CIRCLE_MIN_RADIUS = 128;
+export const CIRCLE_MAX_RADIUS = 192;
+export const CIRCLE_MAX_SPEED = 1.2;
+export const CIRCLE_OPACITY = 1;
+export const BG_COLOR = "#000000";
+export const DOTS_COLOR = "#fff";
+export const CIRCLES_COLORS = ["#FE0000", "#FF0DFF", "#6AFF19", "#19FFDC"];
+export const COLORS = ["red", "orange", "purple", "blue"];
