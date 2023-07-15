@@ -88,11 +88,62 @@ export const languages = [
 
 export const projects = [
   {
-    name: "Food Delivery Website",
+    id: 0,
+    name: "Schedule Maker",
+    technologies: ["HTML/CSS", "Javascript", "TailwindCSS", "React", "Firebase"],
+    demoURL: "https://schedule-maker.netlify.app/",
+    repoURL: "https://github.com/AyoubMazouz/schedule-maker",
+    videoId: "inX4ehepKd0",
+    numOfImgs: 7,
+    description: `
+      <p>
+        <p>
+          This project represents my end-of-year project for 2023 at ISFOO (OFPPT), and I take great pride in its development. It stands out due to its significant utility in solving a real problem we encountered, especially considering that many other projects created during that time were relatively straightforward.
+          Before the creation of this application, we relied on a Python script that I developed to convert existing schedules in Excel format to PDF, as depicted in the last image and video.
+          This project is a Software as a Service (SaaS) that empowers users to create schedules using either the ISFOO template or a public school template. It also offers seamless integration of new templates, allowing for easy additions through the config file.
+        </p>
+        <p>
+          To streamline the scheduling process, the application offers a smooth user experience and various utilities for efficient schedule management and creation. Notable features include:
+        </p>
+        <ul>
+          <li>
+            <b>Tracking availability:</b> The app incorporates a specialized algorithm to check the availability of professors, classrooms, and other relevant statistics. This ensures the prevention of duplicates, conflicts, or complications when using the app.
+          </li>
+          <li>
+            <b>User-friendly interface:</b> The application allows for exporting various settings, which is particularly useful for development purposes. Additionally, it provides the ability to import and export data to and from Excel.
+          </li>
+          <li>
+            <b>Import, export capability, and Excel support:</b> All essential features related to creating schedules have been designed with ease and speed in mind. For instance, once a schedule is completed, users can publish their work and share a link to their personal page, where students can conveniently download the schedule.
+          </li>
+        </ul>
+        <p>
+          In addition to these significant features, there are also smaller elements that enhance the overall user experience.
+          By developing this project, my aim was to address a genuine need within the education sector and provide an efficient solution that enhances the scheduling process while streamlining administrative tasks.
+        </p>
+      </p>
+    `,
+  },
+  {
+    id: 1,
+    name: "Facebook Extension",
+    technologies: ["HTML/CSS", "Javascript", "TailwindCSS", "Svelte"],
+    demoURL: "",
+    repoURL: "",
+    videoId: "p2KLoL9hSwI",
+    numOfImgs: 7,
+    description: `
+      <p>
+      </p>
+    `,
+  },
+  {
+    id: 2,
+    name: "burgerlo",
     technologies: ["HTML/CSS", "Javascript", "TailwindCSS", "ReactJS", "FireBase"],
     demoURL: "https://burgerlo.netlify.app",
     repoURL: "https://github.com/AyoubMazouz/ecommerce",
-    thumbnail: "/assets/ecommerce.jpeg",
+    videoId: "2TGz7KO95EQ",
+    numOfImgs: 6,
     description: `
       <p>
         This website was made for a local business owner that wanted an efficient way to receive
@@ -111,11 +162,13 @@ export const projects = [
     `,
   },
   {
+    id: 3,
     name: "Resume Maker",
     technologies: ["HTML/CSS", "Javascript", "TailwindCSS", "ReactJS"],
     demoURL: "https://resume-maker3.netlify.app/",
     repoURL: "https://github.com/ayoubmazouz/resume-maker",
-    thumbnail: "/assets/resume_maker.jpeg",
+    videoId: "uEZ--CUj2dI",
+    numOfImgs: 6,
     description: `
       <p>
         The purpose of this app is to make professional looking resumes (cv) with eas, you can make
@@ -147,11 +200,13 @@ export const projects = [
     `,
   },
   {
+    id: 4,
     name: "Sudoku Solver Visualizer",
     technologies: ["HTML/CSS", "Javascript", "Canvas API"],
     demoURL: "https://sudoku-solver-visualizer.netlify.app/",
     repoURL: "https://github.com/AyoubMazouz/sudoku-solver-visualizer",
-    thumbnail: "/assets/sudoku.gif",
+    videoId: "C37ie6U3iV8",
+    numOfImgs: 3,
     description: `
       <p>
         Sudoku Solver Visualizer is a web application made with Vanilla Javascript utilizing the{" "}
@@ -166,10 +221,12 @@ export const projects = [
     `,
   },
   {
-    name: "Dental Website",
+    id: 5,
+    name: "Dental Care",
     lastUpdate: "jul 5 2022",
     demoURL: "https://dentalwebsite.netlify.app/",
     repoURL: "https://github.com/AyoubMazouz/dental-website",
+    videoId: "oQcCGjpY84s",
     technologies: [
       "HTML/CSS",
       "Javascript",
@@ -178,7 +235,7 @@ export const projects = [
       "React MarkDown",
       "FireBase",
     ],
-    thumbnail: "/assets/dental_website.jpeg",
+    numOfImgs: 9,
     description: `
       <p>
         Independent project made with ReactJS and Firebase for a customer on Upwork.com.
@@ -187,81 +244,28 @@ export const projects = [
     `,
   },
   {
-    name: "Tic Tac Toe AI",
-    lastUpdate: "jun 1 2022",
-    technologies: ["HTML/CSS", "Javascript", "Canvas API"],
-    demoURL: "https://tic-tac-toe-33.netlify.app/",
-    repoURL: "https://github.com/AyoubMazouz/tic-tac-toe-ai",
-    thumbnail: "/assets/tic_tac_toe.gif",
-    description: `
-      <p>
-        It was a fun little project to practice algorithms. The AI uses the <b>Minimax</b> algorithm
-        to decide the move next.
-        <p>It is undefeatable, the best you can do is a draw.</p>
-      </p>
-    `,
-  },
-  {
+    id: 6,
     name: "Tetris",
     technologies: ["HTML/CSS", "Javascript", "Canvas API"],
     demoURL: "https://tetris3.netlify.app/",
     repoURL: "https://github.com/AyoubMazouz/tetris-js",
-    thumbnail: "/assets/tetris.gif",
+    videoId: "w2HoJzcJX9Q",
+    numOfImgs: 3,
     description: `
       <ul className="pl-4 list-disc indent-0">
         <li>
           There are <b>29 levels</b> Speed and score increase with each level.
         </li>
         <li>
-          It tracks the number of rows that have been cleared, and also give bonus points according
-          to your <b>Tetris Rate</b>.
+        It tracks the number of rows that have been cleared, and also give bonus points according
+        to your <b>Tetris Rate</b>.
         </li>
         <li>Records high score local storage.</li>
         <li>
-          It has a display for the next <b>Tetromino</b>.
+        It has a display for the next <b>Tetromino</b>.
         </li>
         <li>There is also controls for pausing or resetting the game.</li>
-      </ul>
-    `,
-  },
-  {
-    name: "Powershell Cheat Sheet",
-    technologies: ["HTML/CSS", "Javascript", "TailwindCSS", "ReactJS"],
-    demoURL: "https://pscheatsheet.netlify.app/",
-    repoURL: "https://github.com/AyoubMazouz/powershell-cheat-sheet",
-    thumbnail: "/assets/pscheatsheet.jpeg",
-    description: `
-      <p>
-        <b>PSCheatSheet</b> is a web application made with React.
-        <p>
-          This project was made to help my fellow interns to learn
-          <b> PowerShell</b> all in one place.
-        </p>
-        <p>
-          This app has a list of <b>400+ PowerShell commands</b> as well as a short description,{" "}
-          <b>cmdlet</b> and also the type, you can search by name or <b>cmdlet</b> when searching,
-          you can filter the result using the options on the top right, on clicking on any command
-          name to which you will be redirected another page to see in the detail with examples for
-          different parameters.
-        </p>
-      </p>
-    `,
-  },
-  {
-    name: "Snake",
-    technologies: ["HTML/CSS", "Javascript", "Canvas API"],
-    demoURL: "https://snake3.netlify.app/",
-    repoURL: "https://github.com/AyoubMazouz/snake-js",
-    thumbnail: "/assets/snake.gif",
-    description: `
-      <p>
-        Classic Snack game made with Vanilla Javascript with help of the
-        <b> Canvas API</b>
-        <p>
-          you can adjust the difficulty, pause or reset the game. HighScore is stored in local
-          storage.
-        </p>
-      </p>
+        </ul>
         `,
   },
 ];

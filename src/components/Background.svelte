@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import Effect from "./flowfield";
+  import projectStore from "../stores/projectStore";
 
   let canvas;
   $: [width, height] = [window.innerWidth, window.innerHeight];
@@ -19,4 +20,4 @@
   });
 </script>
 
-<canvas class="blur-[2px] fixed top-0 left-0" bind:this={canvas} {width} {height} />
+<canvas class="{$projectStore && 'blur'} fixed top-0 left-0" bind:this={canvas} {width} {height} />

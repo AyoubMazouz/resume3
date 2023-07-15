@@ -1,6 +1,33 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+@layer base {
+  body {
+    @apply scroll-smooth
+  }
+  * {
+    @apply font-font 
+  }
+  b {
+    @apply underline font-bold text-secondary
+  }
+  li {
+    @apply list-disc 
+  }
+  p {
+    @apply indent-2
+  }
+}
+
+@layer components {
+  .link {
+    @apply underline hover:text-secondary transition-all duration-200 font-light text-lg disabled:opacity-75 disabled:text-secondary disabled:cursor-not-allowed
+  };
+}

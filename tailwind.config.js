@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: "'Montserrat', sans-serif",
+        font: "'Lato', sans-serif",
       },
       colors: {
         dark: "#000",
         light: "#fff",
-        accent: "#EA3467",
-        primary: "#4D4DEB",
+        accent: "#E62E62",
+        primary: "#682EE6",
         secondary: "#C4C0E8",
       },
     },

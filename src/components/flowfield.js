@@ -72,8 +72,8 @@ class Particle {
     this.speedModifier = Math.floor(Math.random() * 10);
     this.speedX;
     this.speedY;
-    this.hRange = [343, 240];
-    this.color = [randomInt(this.hRange[0], this.hRange[1]), 80, 61];
+    this.hRange = [343, 259];
+    this.color = [randomInt(this.hRange[0], this.hRange[1]), 74, 38];
     this.colorDir = 1;
   }
 

@@ -1,20 +1,24 @@
 <script>
   import { projects } from "../data";
-  import Smodel from "../stores/Smodel";
+  import projectStore from "../stores/projectStore";
 
   function handleProjectClick(name) {
-    Smodel.setProject(name);
+    projectStore.setProject(name);
   }
 </script>
 
-<div class="space-y-12 flex flex-col items-center lg:py-[21rem]">
+<div class="space-y-12 flex flex-col items-center">
   {#each projects as project (project.name)}
     <button
       on:click={() => handleProjectClick(project.name)}
-      class="rounded-sm shadow-lg overflow-hidden border border-dark transition-all duration-200 hover:scale-105 cursor-pointer relative group"
+      class="rounded-sm shadow-lg overflow-hidden border border-dark transition-all duration-200 hover:scale-105 cursor-pointer relative group w-full h-full"
     >
-      <div class="">
-        <img src={project.thumbnail} alt={project.name} />
+      <div class="w-full h-full">
+        <img
+          src="/assets/{project.name.toLowerCase().replaceAll(' ', '-')}/0-1920.jpeg"
+          alt={project.name}
+          class="object-cover w-full h-full"
+        />
       </div>
       <div
         class="absolute bottom-[-100%] group-hover:bottom-0 top-[50%] left-0 right-0 opacity-0 group-hover:opacity-100 p-4 bg-gradient-to-t from-dark/80 to-transparent flex flex-col justify-end transition-all duration-200"
