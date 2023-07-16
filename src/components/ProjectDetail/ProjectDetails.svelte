@@ -1,8 +1,8 @@
 <script>
-  import Carousel from "../components/Carousel.svelte";
-  import ProjectModelSidePanel from "../components/ProjectModelSidePanel.svelte";
+  import Carousel from "./Carousel.svelte";
+  import ProjectModelSidePanel from "./ProjectDetailSidePanel.svelte";
 
-  import projectStore from "../stores/projectStore";
+  import projectStore from "../../stores/projectStore";
 </script>
 
 <div class="lg:px-10 px-4 gap-4 grid grid-cols-3 h-[100vh] pt-12 pb-24">

@@ -581,6 +581,10 @@ p{
   position: relative;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .bottom-1{
   bottom: 0.25rem;
 }
@@ -621,6 +625,14 @@ p{
   top: 50%;
 }
 
+.bottom-2{
+  bottom: 0.5rem;
+}
+
+.left-2{
+  left: 0.5rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -631,6 +643,10 @@ p{
 
 .z-20{
   z-index: 20;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .col-span-1{
@@ -702,6 +718,10 @@ p{
   aspect-ratio: 16 / 9;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-8{
   height: 2rem;
 }
@@ -728,6 +748,14 @@ p{
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-\[25ch\]{
+  max-width: 25ch;
+}
+
+.max-w-\[35ch\]{
+  max-width: 35ch;
 }
 
 .translate-x-\[-50\%\]{
@@ -802,6 +830,12 @@ p{
   row-gap: 6rem;
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-12 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -812,6 +846,12 @@ p{
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden{
@@ -861,6 +901,10 @@ p{
 .bg-accent{
   --tw-bg-opacity: 1;
   background-color: rgb(230 46 98 / var(--tw-bg-opacity));
+}
+
+.bg-accent\/25{
+  background-color: rgb(230 46 98 / 0.25);
 }
 
 .bg-dark{
@@ -935,6 +979,11 @@ p{
   padding-bottom: 0.25rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-24{
   padding-bottom: 6rem;
 }
@@ -945,6 +994,10 @@ p{
 
 .pt-\[10\.25rem\]{
   padding-top: 10.25rem;
+}
+
+.pb-\[12rem\]{
+  padding-bottom: 12rem;
 }
 
 .text-left{
@@ -1014,12 +1067,12 @@ p{
   opacity: 0;
 }
 
-.opacity-25{
-  opacity: 0.25;
-}
-
 .opacity-50{
   opacity: 0.5;
+}
+
+.opacity-75{
+  opacity: 0.75;
 }
 
 .shadow-lg{
@@ -1286,6 +1339,11 @@ p{
   .lg\:py-\[22rem\]{
     padding-top: 22rem;
     padding-bottom: 22rem;
+  }
+
+  .lg\:py-\[21rem\]{
+    padding-top: 21rem;
+    padding-bottom: 21rem;
   }
 
   .lg\:pb-16{

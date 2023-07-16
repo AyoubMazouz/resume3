@@ -1,6 +1,6 @@
 <script>
-  import { projects } from "../data";
-  import projectStore from "../stores/projectStore";
+  import { projects } from "../../data";
+  import projectStore from "../../stores/projectStore";
   function handleGoBack() {
     projectStore.setProject(null);
   }

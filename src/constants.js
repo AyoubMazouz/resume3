@@ -1,15 +1,14 @@
 export const CIRCLES_CANVAS_W = window.innerWidth;
 export const CIRCLES_CANVAS_H = window.innerHeight;
-// export const CIRCLES_CANVAS_W = 768;
-// export const CIRCLES_CANVAS_H = 512;
-export const CELL_SIZE = 40;
-export const DOTE_SIZE = 2;
-export const CIRCLES_COUNT = 4;
-export const CIRCLE_MIN_RADIUS = 128;
-export const CIRCLE_MAX_RADIUS = 192;
-export const CIRCLE_MAX_SPEED = 1.2;
-export const CIRCLE_OPACITY = 1;
-export const BG_COLOR = "#000000";
-export const DOTS_COLOR = "#fff";
-export const CIRCLES_COLORS = ["#FE0000", "#FF0DFF", "#6AFF19", "#19FFDC"];
-export const COLORS = ["red", "orange", "purple", "blue"];
+export const EFFECT_DEFAULT_OPTIONS = {
+  zoom: 0.44,
+  curve: 1.7,
+  cellSize: 25,
+  numOfParticles: 500,
+};
+export const EFFECT_PARAMS = [
+  { id: "zoom", name: "zoom", desc: "", min: 0.01, max: 1, step: 0.01 },
+  { id: "curve", name: "curve", desc: "", min: 0.1, max: 2.3, step: 0.05 },
+  { id: "cellSize", name: "cell size", desc: "", min: 5, max: 25, step: 1 },
+  { id: "numOfParticles", name: "number of particles", desc: "", min: 100, max: 8000, step: 10 },
+];

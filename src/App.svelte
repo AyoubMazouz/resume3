@@ -1,11 +1,12 @@
 <script>
-  import Background from "./components/Background.svelte";
+  import Background from "./components/Background/Background.svelte";
+  import Footer from "./components/Footer.svelte";
   import projectStore from "./stores/projectStore";
-  import Home from "./views/Home/Home.svelte";
-  import ProjectModel from "./views/ProjectModel.svelte";
+  import Home from "./components/Home/Home.svelte";
+  import ProjectModel from "./components/ProjectDetail/ProjectDetails.svelte";
 </script>
 
-<div class="flex justify-center text-light bg-dark">
+<div class="relative flex justify-center text-light bg-dark">
   <Background />
   <div class="w-full h-full max-w-[1400px]">
     {#if $projectStore}
@@ -14,4 +15,5 @@
       <Home />
     {/if}
   </div>
+  <Footer />
 </div>

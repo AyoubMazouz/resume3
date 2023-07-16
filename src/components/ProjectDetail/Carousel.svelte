@@ -1,6 +1,6 @@
 <script>
   import Icon from "@iconify/svelte";
-  import projectStore from "../stores/projectStore";
+  import projectStore from "../../stores/projectStore";
   let curr = -1;
   function handlePrev() {
     if (curr === -1) return;

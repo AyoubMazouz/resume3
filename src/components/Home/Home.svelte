@@ -1,10 +1,9 @@
 <script>
   import Projects from "../../components/Projects.svelte";
   import { fullName, title } from "../../data";
-
   import About from "./About.svelte";
   import Contact from "./Contact.svelte";
-  import NavBar from "./NavBar.svelte";
+  import NavBar from "../../components/NavBar.svelte";
   import Settings from "./Settings.svelte";
 
   let currTab = 0;
@@ -18,7 +17,7 @@
 <NavBar {currTab} on:linkClick={handleLinkClick} />
 
 <div
-  class="relative grid gap-x-12 gap-y-24 lg:grid-cols-2 max-w-[1400px] sm:px-12 md:pr-20 md:pl-24 lg:pr-12 lg:pl-16 px-4"
+  class="relative grid gap-x-12 gap-y-24 lg:grid-cols-2 w-full max-w-[1400px] sm:px-12 md:pr-20 md:pl-24 lg:pr-12 lg:pl-16 px-4"
 >
   <div class="hidden lg:block" />
   <div class="flex flex-col h-full pt-[10.25rem] lg:fixed">
@@ -34,7 +33,7 @@
     </h2>
     <svelte:component this={tabs[currTab]} on:linkClick={handleLinkClick} />
   </div>
-  <div class="lg:py-[22rem]">
+  <div class="lg:py-[21rem] pb-[12rem] w-full">
     <Projects />
   </div>
 </div>

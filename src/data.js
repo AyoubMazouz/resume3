@@ -1,7 +1,6 @@
 // full name must be separated with space
 export const fullName = ["Mazouz", "Ayoub"];
 export const title = "Software Developer";
-export const image = "./assets/profile.jpg";
 export const details = [
   "22 ans",
   "07 70 75 91 06",
@@ -17,6 +16,14 @@ export const description = `
     gets hard. first I<b> recognize the problem</b>, <b>determin the root cause</b>, 
     <b>explore possible solutions </b>
     then<b> implement the solution</b>.
+  </p>
+`;
+
+export const WELCOME = `
+  <p>
+    Welcome to my personal portfolio,
+    Browse my project on the right side,
+    and play with the settings to change the parameters of the flow field in the background.
   </p>
 `;
 
