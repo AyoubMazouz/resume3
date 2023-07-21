@@ -9,8 +9,24 @@
 
 
 @layer base {
-  body {
-    @apply scroll-smooth
+  ::-webkit-scrollbar {
+      width: 4px;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background-color: #682EE6;
+    }
+  
+    ::-webkit-scrollbar-track {
+      background-color: #C4C0E8;
+    }
+  
+    ::-webkit-scrollbar {
+      scrollbar-width: thin;
+    }
+
+  html {
+    @apply !scroll-smooth
   }
   * {
     @apply font-font 

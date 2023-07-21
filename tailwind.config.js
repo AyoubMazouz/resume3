@@ -15,6 +15,5 @@ export default {
       },
     },
   },
-  safelist: ["text-red", "text-purple", "text-green", "text-blue"],
   plugins: [],
 };

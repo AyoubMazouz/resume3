@@ -5,6 +5,8 @@
   import Contact from "./Contact.svelte";
   import NavBar from "../../components/NavBar.svelte";
   import Settings from "./Settings.svelte";
+  import { blur, fade } from "svelte/transition";
+  import { quintInOut } from "svelte/easing";
 
   let currTab = 0;
   const tabs = [About, Contact, Settings];
@@ -17,6 +19,8 @@
 <NavBar {currTab} on:linkClick={handleLinkClick} />
 
 <div
+  in:fade={{ duration: 200, easing: quintInOut }}
+  out:fade={{ duration: 200, easing: quintInOut }}
   class="relative grid gap-x-12 gap-y-24 lg:grid-cols-2 w-full max-w-[1400px] sm:px-12 md:pr-20 md:pl-24 lg:pr-12 lg:pl-16 px-4"
 >
   <div class="hidden lg:block" />

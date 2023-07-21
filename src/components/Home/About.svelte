@@ -2,16 +2,22 @@
   import { createEventDispatcher } from "svelte";
   import { description, githubURL, linkedinURL } from "../../data";
   import Icon from "@iconify/svelte";
+  import { fade } from "svelte/transition";
+  import { quintInOut } from "svelte/easing";
 
   const dispatch = createEventDispatcher();
 </script>
 
-<div class="">
+<div
+  in:fade={{ delay: 200, duration: 200, easing: quintInOut }}
+  out:fade={{ duration: 200, easing: quintInOut }}
+  class=""
+>
   <p class="indent-4 max-w-full sm:text-2xl lg:max-w-[30ch] xl:max-w-[35ch]">
     {@html description}
   </p>
 
-  <div class="flex gap-2 sm:gap-4 justify-between mt-16 items-center">
+  <div class="flex gap-2 sm:gap-4 justify-between mt-36 items-center">
     <div class="flex gap-2 sm:gap-4 items-center">
       <button
         on:click={() => dispatch("linkClick", 1)}

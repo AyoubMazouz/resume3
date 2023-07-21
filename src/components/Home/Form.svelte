@@ -1,7 +1,9 @@
 <script>
   import emailjs from "@emailjs/browser";
-  import alertStore from "../../stores/alertStore";
+  import Icon from "@iconify/svelte";
 
+  let loading = false;
+  let feedBack = "";
   let formValues = {
     name: "",
     email: "",
@@ -10,14 +12,19 @@
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    loading = true;
     emailjs.send("service_a5he7k9", "template_49l84no", formValues, "Aqf6ll3x8Oeh4hmcK").then(
       (result) => {
-        alertStore.setAlert("Message has been sent successfully!");
+        loading = false;
+        feedBack = "Message has been sent!";
         console.log(result.text);
+        setTimeout(() => (feedBack = ""), 10000);
       },
       (error) => {
-        alertStore.setAlert("danger", "Something went wrong! Please try again.");
+        feedBack = "Something went wrong! Please try again.";
+        loading = false;
         console.log(error.text);
+        setTimeout(() => (feedBack = ""), 10000);
       }
     );
   };
@@ -53,8 +60,16 @@
     <div class="blur absolute bottom-1 left-1 right-1 top-[1.8rem] bg-light/30 -z-10" />
   </div>
   <button
-    class="relative rounded-sm col-span-full py-0.5 px-2 mt-1 text-dark border border-white focus:outline-none focus:bg-light/75 hover:bg-light/75 bg-light font-semibold transition-all duration-200"
-    ><div class="blur absolute bottom-1 left-1 right-1 top-0 bg-light/30 -z-10" />
-    Send Message!</button
+    disabled={loading}
+    class="relative rounded-sm col-span-full py-0.5 px-2 mt-1 text-dark border border-white focus:outline-none focus:bg-light/75 hover:bg-light/75 bg-light font-semibold transition-all duration-200 flex justify-center items-center"
   >
+    <div class="blur absolute bottom-1 left-1 right-1 top-0 bg-light/30 -z-10" />
+    {#if loading}
+      <Icon icon="line-md:loading-twotone-loop" width="32px" />
+    {:else if feedBack}
+      <span>{feedBack}</span>
+    {:else}
+      <span>Send Message!</span>
+    {/if}
+  </button>
 </form>

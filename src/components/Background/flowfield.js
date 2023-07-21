@@ -14,6 +14,9 @@ class Effect {
     this.cellSize = options.cellSize;
     this.curve = options.curve;
     this.zoom = options.zoom;
+    this.speed = options.speed;
+    this.lifeSpan = options.lifeSpan;
+    this.speedBoost = 1;
     this.particles = [];
     this.grid = [];
     this.rows;
@@ -21,7 +24,7 @@ class Effect {
     this.init();
   }
 
-  init() {
+  initGrid() {
     this.grid = [];
     this.rows = Math.floor(this.w / this.cellSize);
     this.cols = Math.floor(this.h / this.cellSize);
@@ -32,35 +35,39 @@ class Effect {
       }
       this.grid.push(temp);
     }
-
+  }
+  initParticles() {
     this.particles = [];
     for (let i = 0; i <= this.numOfParticles; i++) {
       this.particles.push(new Particle(this));
     }
   }
-  reset() {
-    this.grid = [];
-    this.rows = Math.floor(this.w / this.cellSize);
-    this.cols = Math.floor(this.h / this.cellSize);
-
-    for (let y = 0; y <= this.cols; y++) {
-      const temp = [];
-      for (let x = 0; x <= this.rows; x++) {
-        temp[x] = (Math.cos(x * this.zoom) + Math.sin(y * this.zoom)) * this.curve;
-      }
-      this.grid.push(temp);
-    }
+  init() {
+    this.initGrid();
+    this.initParticles();
   }
 
   modify(obj) {
-    this.numOfParticles = obj.numOfParticles;
-    this.cellSize = obj.cellSize;
-    this.curve = obj.curve;
+    let reInitParticles = this.numOfParticles !== obj.numOfParticles;
+    let reInitGrid =
+      this.zoom !== obj.zoom || this.curve !== obj.curve || this.cellSize !== obj.cellSize;
+
     this.zoom = obj.zoom;
-    this.init();
+    this.curve = obj.curve;
+    this.speed = obj.speed;
+    this.cellSize = obj.cellSize;
+    this.lifeSpan = obj.lifeSpan;
+    this.numOfParticles = obj.numOfParticles;
+
+    if (reInitGrid) {
+      this.initGrid();
+      this.speedBoost = 10;
+    }
+    if (reInitParticles) this.initParticles();
   }
 
   render() {
+    this.speedBoost = this.speedBoost <= 1 ? 1 : this.speedBoost - this.speedBoost / 12;
     this.ctx.fillStyle = BG_COLOR;
     this.ctx.fillRect(0, 0, this.w, this.h);
     for (const particle of this.particles) {
@@ -79,15 +86,14 @@ class Particle {
     this.cursor = 0;
     this.w = 10;
     this.h = 10;
-    this.angle = 0;
-    this.lifeSpan = randomInt(5, 50);
-    this.speedModifier = randomInt(1, 10);
+    this.angle;
+    this.lifeSpan = randomInt(5, effect.lifeSpan);
+    this.speedModifier = randomInt(1, effect.speed);
     this.speedX;
     this.speedY;
     this.hRange = [343, 259];
     this.color = [randomInt(this.hRange[0], this.hRange[1]), 74, 38];
     this.colorDir = 1;
-    console.log();
   }
 
   update() {
@@ -101,8 +107,8 @@ class Particle {
       this.speedX = Math.sin(this.angle);
       this.speedY = Math.cos(this.angle);
 
-      this.x += this.speedX * this.speedModifier;
-      this.y += this.speedY * this.speedModifier;
+      this.x += this.speedX * this.speedModifier * this.effect.speedBoost;
+      this.y += this.speedY * this.speedModifier * this.effect.speedBoost;
 
       this.history.push({ x: Math.floor(this.x), y: Math.floor(this.y) });
     } else if (this.cursor < this.history.length - 1) {
@@ -130,10 +136,8 @@ class Particle {
   }
 
   reset() {
-    this.x = randomInt(0, this.effect.w);
-    this.y = randomInt(0, this.effect.h);
-    this.history = [{ x: this.x, y: this.y }];
-    this.cursor = 0;
+    const newInstance = new Particle(this.effect);
+    Object.assign(this, newInstance);
   }
 }
 

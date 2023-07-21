@@ -16,9 +16,9 @@
     if (canvas) {
       effect = new Effect(canvas, ct, EFFECT_DEFAULT_OPTIONS);
       const animate = () => {
-        console.time("st");
+        // console.time("st");
         effect.render();
-        console.timeEnd("st");
+        // console.timeEnd("st");
         requestAnimationFrame(animate);
       };
       animate();

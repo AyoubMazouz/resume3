@@ -1,7 +1,10 @@
 <script>
   import Icon from "@iconify/svelte";
   import projectStore from "../../stores/projectStore";
+  import { fade, fly } from "svelte/transition";
+  import { quintInOut } from "svelte/easing";
   let curr = -1;
+  let dir = 1;
   function handlePrev() {
     if (curr === -1) return;
     curr -= 1;
@@ -9,9 +12,11 @@
   function handleNext() {
     if (curr === $projectStore.numOfImgs - 1) return;
     curr += 1;
+    dir = 1;
   }
   function handleClick(id) {
     curr = id;
+    dir = -1;
   }
 </script>
 
@@ -42,10 +47,18 @@
       />
     </div>
   {:else}
-    <img
-      src="/assets/{$projectStore.name.toLowerCase().replaceAll(' ', '-')}/{curr}-1920.jpeg"
-      alt={$projectStore.name}
-    />
+    {#each new Array($projectStore.numOfImgs)
+      .fill(0)
+      .map((_, i) => i) as index (`${index}carousel`)}
+      {#if index === curr}
+        <img
+          in:fade={{ duration: 200, easing: quintInOut }}
+          out:fade={{ duration: 200, easing: quintInOut }}
+          src="/assets/{$projectStore.name.toLowerCase().replaceAll(' ', '-')}/{curr}-1920.jpeg"
+          alt={$projectStore.name}
+        />
+      {/if}
+    {/each}
   {/if}
 </div>
 

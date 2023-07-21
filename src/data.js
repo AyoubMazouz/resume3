@@ -10,12 +10,9 @@ export const details = [
 
 export const description = `
   <p>
-    I am a <b>self taught</b> developer, started learning programming in <b>2019</b>, since then
-    I've been programming almost everyday in my free time, I like the challenge and the level of
-    diffuculty that comes with it and the evolving nature of this field. I never give up when things
-    gets hard. first I<b> recognize the problem</b>, <b>determin the root cause</b>, 
-    <b>explore possible solutions </b>
-    then<b> implement the solution</b>.
+    I am a self-taught developer who started learning programming in 2018. 
+    Since then, 
+    I've been programming almost every day,
   </p>
 `;
 
@@ -27,71 +24,8 @@ export const WELCOME = `
   </p>
 `;
 
-export const linkedinURL = "https://www.linkedin.com/in/ayoub-mazouz-8aa85a226/";
-export const githubURL = "https://github.com/AyoubMazouz";
-
-export const educations = [
-  ["2019 - 2020", "Baccalauréat branche Science de la Vie et la Terre (SVT) à lycée Qadi Ayad."],
-  [
-    "2021 - 2023",
-    "Technicien Spécialisé en Infrastructure Informatique à ISFO (OFPPT) à Sidi Maârouf, Casablanca.",
-  ],
-];
-
-export const experiences = [
-  ["Juil - Août 2022", "PHP/Laravel Fullstack Développeur à Sirecom.ma."],
-];
-
-export const competencies = [
-  "Administrer les systèmes Windows et Linux.",
-  "Algorithms & Data Structures",
-  "Créer/utiliser APIs, bases de données SQL & noSQL",
-  "Automatisation et virtualisation.",
-  "Tests unitaires et débogage.",
-  "Apprenant vite, tant que la documentation est disponible.",
-  "Résolution de problèmes et pensée critique.",
-  "Auditeur actif, apprentissage continu.",
-];
-
-export const programmingLangues = {
-  efficient: ["JavaScript", "Python", "Git", "ReactJs", "NodeJs", "TailwindCSS"],
-  familiar: [
-    "TypeScript",
-    "FireBase",
-    "SASS",
-    "BootStrap",
-    "C#",
-    "C",
-    "Lua",
-    "Bash",
-    "PowerShell",
-    "Flask",
-    "ReactNative",
-    "Electron",
-    "PHP",
-    "Laravel",
-    "Rust",
-  ],
-};
-
-export const hobbies = [
-  "histoires",
-  "films",
-  "Documentaires",
-  "Podcasts",
-  "Technologie",
-  "Astronomie",
-  "biologie",
-  "Dessin",
-  "Jeux vidéos",
-  "cuisine",
-];
-
-export const languages = [
-  ["Français", "3/6", "bien"],
-  ["Anglais", "5/6", "très bien"],
-  ["Arabe", "full", "maternelle"],
-];
+export const linkedinURL = "https://www.linkedin.com/in/ayoubMazouz";
+export const githubURL = "https://github.com/ayoubMazouz";
 
 export const projects = [
   {
@@ -105,9 +39,9 @@ export const projects = [
     description: `
       <p>
         <p>
-          This project represents my end-of-year project for 2023 at ISFOO (OFPPT), and I take great pride in its development. It stands out due to its significant utility in solving a real problem we encountered, especially considering that many other projects created during that time were relatively straightforward.
+          This project represents my <b>end-of-year project for 2023 at ISFOO (OFPPT)</b>, and I take great pride in its development. It stands out due to its significant utility in solving a real problem we encountered, especially considering that many other projects created during that time were relatively straightforward.
           Before the creation of this application, we relied on a Python script that I developed to convert existing schedules in Excel format to PDF, as depicted in the last image and video.
-          This project is a Software as a Service (SaaS) that empowers users to create schedules using either the ISFOO template or a public school template. It also offers seamless integration of new templates, allowing for easy additions through the config file.
+          This project is a (SaaS) that empowers users to create schedules using either the ISFOO template or a public school template. It also offers seamless integration of new templates, allowing for easy additions through the config file.
         </p>
         <p>
           To streamline the scheduling process, the application offers a smooth user experience and various utilities for efficient schedule management and creation. Notable features include:
@@ -153,18 +87,7 @@ export const projects = [
     numOfImgs: 6,
     description: `
       <p>
-        This website was made for a local business owner that wanted an efficient way to receive
-        order from hungry customers.
-        <p>
-          It contains all menu items that the business provide with an easy way to order them right
-          from the website the customers can also contact the business via contact form or other
-          ways of communication. on other side <b>Admin Panel</b> the owner receives all order as
-          well as messages
-        </p>
-        <p>
-          The <b>Admin Panel</b> allow the owner to control his website, see orders and change it
-          state, add/delete/modify items, reply to messages, reviews, etc...
-        </p>
+        I developed this website for a <b>local business</b> owner seeking a streamlined ordering system for their hungry customers. The website features a comprehensive menu and provides a convenient way for customers to place orders directly. Customers can also contact the business through a contact form or alternative communication channels. On the <b>Admin Panel</b>, <b>the owner can efficiently manage the website, view and update orders, add/delete/modify items, and respond to messages, reviews, and more.</b>
       </p>
     `,
   },
@@ -177,33 +100,12 @@ export const projects = [
     videoId: "uEZ--CUj2dI",
     numOfImgs: 6,
     description: `
-      <p>
-        The purpose of this app is to make professional looking resumes (cv) with eas, you can make
-        your resume in less than
-        <b> 3 minutes</b>, thanks to the efficient way this app was structured.
-        <p>
-          There are input fields where you insert your information, you can add more section, change
-          color palette
-          <b> (30+ colors)</b>, choose from
-          <b> 5 Different looking designs</b> and other options to make you resume as good as it can
-          get.
-        </p>
-        <p>
-          This app is proven to be extremely useful, I made over 150+ resumes for my friends,
-          family, coworker and students
-        </p>
-        <p>
-          This app is <b>free and open source</b> like all most of my projects
-        </p>
-        <p>
-          <b>Some of my friends made a bit of money selling resume </b>
-          that are made using my app.
-        </p>
-        <p>
-          For more indept details on how to use this app, I had made a short documentation, it can
-          be found in the app it self.
-        </p>
-      </p>
+     <p>The purpose of this app is to create professional-looking resumes (CV) quickly and easily. With user-friendly input fields and a streamlined structure, you can generate a polished resume in less than <b>3 minutes</b>.</p>
+    <p>Customize your resume with options to add sections, choose from over <b>30 colors</b> in the color palette, and select from <b>5 unique designs</b> to make it truly stand out.</p>
+    <p>This app has been highly valuable, with over 150+ resumes created for friends, family, coworkers, and students.</p>
+    <p>It is a <b>free and open-source</b> project, like many of my other projects.</p>
+    <p>Notably, some of my friends have successfully sold resumes created using this app.</p>
+    <p>For a more detailed guide on using the app, please refer to the concise documentation provided within.</p>
     `,
   },
   {
@@ -215,15 +117,8 @@ export const projects = [
     videoId: "C37ie6U3iV8",
     numOfImgs: 3,
     description: `
-      <p>
-        Sudoku Solver Visualizer is a web application made with Vanilla Javascript utilizing the{" "}
-        <b>Canvas API</b>.
-        <p>
-          In this application you can play sudoku as you normally would, but at click of a button
-          you can solve any board using the
-          <b> BackTrack </b>
-          algorithm, or even better visualize the steps of the algorithm as it solves the board.
-        </p>
+      <p>    
+        <b>Sudoku Solver Visualizer</b> is a web application built with <b>Vanilla JavaScript</b> and the <b>Canvas API.</b> It allows you to play sudoku as usual, but with the added <b>functionality of solving</b> any board using the <b>BackTrack algorithm</b>. Moreover, you can <b>visualize</b> each step of the algorithm as it solves the board, providing a deeper understanding of the process.
       </p>
     `,
   },
@@ -245,8 +140,7 @@ export const projects = [
     numOfImgs: 9,
     description: `
       <p>
-        Independent project made with ReactJS and Firebase for a customer on Upwork.com.
-        <p>It has multiple pages: Services, Gallery, Blog, Contact...</p>
+        I created a visually appealing website using ReactJS and Firebase for a client on <b>Upwork.com</b>. The site includes multiple pages such as <b>Services, Gallery, Blog, and Contact</b>.
       </p>
     `,
   },
@@ -261,18 +155,21 @@ export const projects = [
     description: `
       <ul className="pl-4 list-disc indent-0">
         <li>
-          There are <b>29 levels</b> Speed and score increase with each level.
+          Developed Tetris game with <b>29 challenging levels</b> where <b>speed</b> and <b>score</b> progressively increase..
         </li>
         <li>
-        It tracks the number of rows that have been cleared, and also give bonus points according
-        to your <b>Tetris Rate</b>.
+          Implemented a tracking system to count the number of cleared rows and reward bonus points based on the <b>Tetris Rate</b>.
         </li>
-        <li>Records high score local storage.</li>
         <li>
-        It has a display for the next <b>Tetromino</b>.
+          Incorporated local storage to store and display high scores.
         </li>
-        <li>There is also controls for pausing or resetting the game.</li>
-        </ul>
-        `,
+        <li>
+          Included a next Tetromino display for enhanced gameplay experience.
+        </li>
+        <li>
+          Added convenient controls for pausing or resetting the game.
+        </li>
+      </ul>
+    `,
   },
 ];

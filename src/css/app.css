@@ -424,8 +424,24 @@ video {
   display: none;
 }
 
-body{
-  scroll-behavior: smooth;
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #682EE6;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #C4C0E8;
+}
+
+::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+
+html{
+  scroll-behavior: smooth !important;
 }
 
 *{
@@ -625,14 +641,6 @@ p{
   top: 50%;
 }
 
-.bottom-2{
-  bottom: 0.5rem;
-}
-
-.left-2{
-  left: 0.5rem;
-}
-
 .-z-10{
   z-index: -10;
 }
@@ -643,10 +651,6 @@ p{
 
 .z-20{
   z-index: 20;
-}
-
-.z-50{
-  z-index: 50;
 }
 
 .col-span-1{
@@ -692,6 +696,10 @@ p{
 
 .mt-\[2\.35rem\]{
   margin-top: 2.35rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
 }
 
 .block{
@@ -748,14 +756,6 @@ p{
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-\[25ch\]{
-  max-width: 25ch;
-}
-
-.max-w-\[35ch\]{
-  max-width: 35ch;
 }
 
 .translate-x-\[-50\%\]{
@@ -979,13 +979,12 @@ p{
   padding-bottom: 0.25rem;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .pb-24{
   padding-bottom: 6rem;
+}
+
+.pb-\[12rem\]{
+  padding-bottom: 12rem;
 }
 
 .pt-12{
@@ -994,10 +993,6 @@ p{
 
 .pt-\[10\.25rem\]{
   padding-top: 10.25rem;
-}
-
-.pb-\[12rem\]{
-  padding-bottom: 12rem;
 }
 
 .text-left{
@@ -1334,11 +1329,6 @@ p{
   .lg\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .lg\:py-\[22rem\]{
-    padding-top: 22rem;
-    padding-bottom: 22rem;
   }
 
   .lg\:py-\[21rem\]{
