@@ -13,8 +13,8 @@
 >
   <div class="space-y-4">
     {#each EFFECT_PARAMS as param}
-      <div class="space-y-1">
-        <label for={param.id}>{param.name}:</label>
+      <div class="space-y-2">
+        <label for={param.id} class="font-light text-xl">{param.name}:</label>
         <Slider
           id={param.id}
           min={param.min}
