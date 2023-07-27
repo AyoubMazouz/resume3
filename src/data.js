@@ -38,29 +38,27 @@ export const projects = [
     numOfImgs: 7,
     description: `
       <p>
-        <p>
-          This project represents my <b>end-of-year project for 2023 at ISFOO (OFPPT)</b>, and I take great pride in its development. It stands out due to its significant utility in solving a real problem we encountered, especially considering that many other projects created during that time were relatively straightforward.
-          Before the creation of this application, we relied on a Python script that I developed to convert existing schedules in Excel format to PDF, as depicted in the last image and video.
-          This project is a (SaaS) that empowers users to create schedules using either the ISFOO template or a public school template. It also offers seamless integration of new templates, allowing for easy additions through the config file.
-        </p>
-        <p>
-          To streamline the scheduling process, the application offers a smooth user experience and various utilities for efficient schedule management and creation. Notable features include:
-        </p>
-        <ul>
-          <li>
-            <b>Tracking availability:</b> The app incorporates a specialized algorithm to check the availability of professors, classrooms, and other relevant statistics. This ensures the prevention of duplicates, conflicts, or complications when using the app.
-          </li>
-          <li>
-            <b>User-friendly interface:</b> The application allows for exporting various settings, which is particularly useful for development purposes. Additionally, it provides the ability to import and export data to and from Excel.
-          </li>
-          <li>
-            <b>Import, export capability, and Excel support:</b> All essential features related to creating schedules have been designed with ease and speed in mind. For instance, once a schedule is completed, users can publish their work and share a link to their personal page, where students can conveniently download the schedule.
-          </li>
-        </ul>
-        <p>
-          In addition to these significant features, there are also smaller elements that enhance the overall user experience.
-          By developing this project, my aim was to address a genuine need within the education sector and provide an efficient solution that enhances the scheduling process while streamlining administrative tasks.
-        </p>
+        This project represents my <b>end-of-year project for 2023 at ISFOO (OFPPT)</b>, and I take great pride in its development. It stands out due to its significant utility in solving a real problem we encountered, especially considering that many other projects created during that time were relatively straightforward.
+        Before the creation of this application, we relied on a Python script that I developed to convert existing schedules in Excel format to PDF, as depicted in the last image and video.
+        This project is a (SaaS) that empowers users to create schedules using either the ISFOO template or a public school template. It also offers seamless integration of new templates, allowing for easy additions through the config file.
+      </p>
+      <p>
+        To streamline the scheduling process, the application offers a smooth user experience and various utilities for efficient schedule management and creation. Notable features include:
+      </p>
+      <ul>
+        <li>
+          <b>Tracking availability:</b> The app incorporates a specialized algorithm to check the availability of professors, classrooms, and other relevant statistics. This ensures the prevention of duplicates, conflicts, or complications when using the app.
+        </li>
+        <li>
+          <b>User-friendly interface:</b> The application allows for exporting various settings, which is particularly useful for development purposes. Additionally, it provides the ability to import and export data to and from Excel.
+        </li>
+        <li>
+          <b>Import, export capability, and Excel support:</b> All essential features related to creating schedules have been designed with ease and speed in mind. For instance, once a schedule is completed, users can publish their work and share a link to their personal page, where students can conveniently download the schedule.
+        </li>
+      </ul>
+      <p>
+        In addition to these significant features, there are also smaller elements that enhance the overall user experience.
+        By developing this project, my aim was to address a genuine need within the education sector and provide an efficient solution that enhances the scheduling process while streamlining administrative tasks.
       </p>
     `,
   },
@@ -74,6 +72,16 @@ export const projects = [
     numOfImgs: 7,
     description: `
       <p>
+        During my tenure at <b>Maxmind.ma</b>, I undertook a challenging solo project involving the development of a <b>Facebook scraper extension</b>. The primary objective was to <b>extract information from Facebook groups and seamlessly integrate it into a new website</b>. The core focus of this project was on <b>speed, user-friendliness, and reliability</b>.      
+      </p>
+      <p>
+        Throughout the development process, I encountered several iterations and faced numerous trials and errors. This was my first experience with a project of this nature, which brought its own set of challenges. However, my determination and dedication allowed me to overcome these hurdles and deliver an exceptional end product.
+      </p>
+      <p>
+        To implement the extension, I opted to use the efficient Svelte framework, which proved to be a wise choice for its simplicity and performance. Although optional, I also integrated <b>Chat GPT into </b>the project, further enhancing its capabilities.
+      </p>
+      <p>
+        By the project's conclusion, we achieved a remarkable extension capable of efficiently scraping multiple websites with minimal configuration. This enabled us to seamlessly inject data into multiple other websites or endpoints, making it a versatile and powerful solution.
       </p>
     `,
   },
@@ -100,12 +108,24 @@ export const projects = [
     videoId: "uEZ--CUj2dI",
     numOfImgs: 6,
     description: `
-     <p>The purpose of this app is to create professional-looking resumes (CV) quickly and easily. With user-friendly input fields and a streamlined structure, you can generate a polished resume in less than <b>3 minutes</b>.</p>
-    <p>Customize your resume with options to add sections, choose from over <b>30 colors</b> in the color palette, and select from <b>5 unique designs</b> to make it truly stand out.</p>
-    <p>This app has been highly valuable, with over 150+ resumes created for friends, family, coworkers, and students.</p>
-    <p>It is a <b>free and open-source</b> project, like many of my other projects.</p>
-    <p>Notably, some of my friends have successfully sold resumes created using this app.</p>
-    <p>For a more detailed guide on using the app, please refer to the concise documentation provided within.</p>
+     <p>
+      The purpose of this app is to create professional-looking resumes (CV) quickly and easily. With user-friendly input fields and a streamlined structure, you can generate a polished resume in less than <b>3 minutes</b>.
+     </p>
+    <p>
+      Customize your resume with options to add sections, choose from over <b>30 colors</b> in the color palette, and select from <b>5 unique designs</b> to make it truly stand out.
+    </p>
+    <p>
+      This app has been highly valuable, with over 150+ resumes created for friends, family, coworkers, and students.
+    </p>
+    <p>
+      It is a <b>free and open-source</b> project, like many of my other projects.
+    </p>
+    <p>
+      Notably, some of my friends have successfully sold resumes created using this app.
+    </p>
+    <p>
+      For a more detailed guide on using the app, please refer to the concise documentation provided within.
+    </p>
     `,
   },
   {
