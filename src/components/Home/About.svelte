@@ -11,13 +11,13 @@
 <div
   in:fade={{ delay: 200, duration: 200, easing: quintInOut }}
   out:fade={{ duration: 200, easing: quintInOut }}
-  class=""
+  class="lg:w-1/2 lg:pr-6"
 >
-  <p class="indent-4 max-w-full sm:text-2xl lg:max-w-[30ch] xl:max-w-[35ch]">
+  <p class="indent-4 sm:text-2xl">
     {@html description}
   </p>
 
-  <div class="flex gap-2 sm:gap-4 justify-between mt-36 items-center">
+  <div class="flex flex-wrap gap-2 sm:gap-4 justify-between mt-10 lg:mt-36 items-center">
     <div class="flex gap-2 sm:gap-4 items-center">
       <button
         on:click={() => dispatch("linkClick", 1)}
@@ -28,7 +28,7 @@
         target="_blank"
         href="/MazouzAyoub.pdf"
         class="bg-accent text-light font-light py-1 px-4 hover:bg-accent/50 border border-accent sm:text-xl transition-all duration-200"
-        ><span class="hidden sm:inline">Download</span> Resume</a
+        ><span class="hidden sm:inline lg:hidden xl:inline">Download</span> Resume</a
       >
     </div>
     <div class="flex gap-2 sm:gap-4 items-center">

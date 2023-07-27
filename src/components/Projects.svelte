@@ -7,7 +7,7 @@
   }
 </script>
 
-<div class="space-y-12 flex flex-col items-center">
+<div class="gap-y-12 flex flex-col justify-center items-center">
   {#each projects as project (project.name)}
     <button
       on:click={() => handleProjectClick(project.name)}

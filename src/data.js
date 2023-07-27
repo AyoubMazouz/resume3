@@ -10,8 +10,8 @@ export const details = [
 
 export const description = `
   <p>
-    I am a self-taught developer who started learning programming in 2018. 
-    Since then, 
+    I am a self-taught developer who started learning 
+    programming in 2018. Since then, 
     I've been programming almost every day,
   </p>
 `;

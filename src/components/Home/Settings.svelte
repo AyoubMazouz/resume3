@@ -9,20 +9,18 @@
 <div
   in:fade={{ delay: 200, duration: 200, easing: quintInOut }}
   out:fade={{ duration: 200, easing: quintInOut }}
-  class="space-y-4"
+  class="flex flex-col gap-y-4"
 >
-  <div class="space-y-4">
-    {#each EFFECT_PARAMS as param}
-      <div class="space-y-2">
-        <label for={param.id} class="font-light text-xl">{param.name}:</label>
-        <Slider
-          id={param.id}
-          min={param.min}
-          max={param.max}
-          step={param.step}
-          bind:value={$settingsStore[param.id]}
-        />
-      </div>
-    {/each}
-  </div>
+  {#each EFFECT_PARAMS as param}
+    <div class="space-y-2 w-full">
+      <label for={param.id} class="font-semibold text-sm sm:text-base">{param.name}:</label>
+      <Slider
+        id={param.id}
+        min={param.min}
+        max={param.max}
+        step={param.step}
+        bind:value={$settingsStore[param.id]}
+      />
+    </div>
+  {/each}
 </div>

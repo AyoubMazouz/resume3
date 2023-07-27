@@ -25,8 +25,8 @@
   out:fade={{ duration: 200, easing: quintInOut }}
   class="lg:max-w-[40vw]"
 >
-  <p class="">To contact me, please use the form below.</p>
-  <p class="">Phone number and email are also an option, <b>click to copy!</b></p>
+  <p class="hidden lg:block">To contact me, please use the form below.</p>
+  <p class="hidden lg:block">Phone number and email are also an option, <b>click to copy!</b></p>
   <div class="flex justify-end flex-wrap gap-2 sm:gap-4 my-6">
     <button
       on:click={copyEmailToClipboard}
