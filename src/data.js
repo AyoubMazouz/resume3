@@ -166,6 +166,24 @@ export const projects = [
   },
   {
     id: 6,
+    name: "CasaDiag",
+    lastUpdate: "jul 5 2022",
+    demoURL: "https://casadiag.vercel.app",
+    repoURL: "https://github.com/AyoubMazouz/casadiag",
+    videoId: "",
+    technologies: ["HTML/CSS", "Javascript", "TailwindCSS", "SvelteKit", "MarkDown", "Maria DB"],
+    numOfImgs: 9,
+    description: `
+      <p>
+        I made this website for a group of close friends who wants to start there own business.
+      </p>
+      <p>
+        This website has couple of pages, contact form and a blog. it is very optimized for SEO and very fast to load.
+      </p>
+    `,
+  },
+  {
+    id: 7,
     name: "Tetris",
     technologies: ["HTML/CSS", "Javascript", "Canvas API"],
     demoURL: "https://tetris3.netlify.app/",
